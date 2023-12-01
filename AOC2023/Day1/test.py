@@ -11,7 +11,6 @@ for i in nums:
             stack.append(num)
     output += int(stack[0] + stack[-1])
     print(stack,output)
-print(output)
 
 # %%
 output = 0
@@ -27,7 +26,6 @@ for sdx,i in enumerate(nums):
                 if idx+x <= size:
                     if i[idx:idx+x] in si:
                         stack.append(si[i[idx:idx+x]])
-    val = int(str(stack[0]) + str(stack[-1]))
-    output += val
-output
+    output += int(str(stack[0]) + str(stack[-1]))
+print(output)
 # %%
